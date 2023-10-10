@@ -9,10 +9,6 @@ body {
   flex-direction: column;
 }
 
-img {
-  width: 250px;
-}
-
 .hero {
   background-color: #1f2937;
   padding: 10px 200px;
@@ -85,19 +81,39 @@ h2 {
   font-size: 36px;
   font-weight: extra-bold;
   color: #1f2937;
-  margin-top: 50px;
+  margin: 30px;
   text-align: center;
 }
 
-.content {
+.container {
   display: flex;
+  flex-flow: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .card {
   display: flex;
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
-  border-radius: 6px;
-  width: 300px;
-  padding: 8px;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.card-content {
+  padding: 10px;
+}
+.card img {
+  width: 200px;
+}
+
+/* 3rd section */
+.quote {
+  background-color: #e5e7eb;
+  padding: 100px 200px;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
 }
